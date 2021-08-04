@@ -1,0 +1,77 @@
+# Composer installed dependencies.
+vendor/
+
+# These are managed by core-composer-scaffold, see
+# https://github.com/drupal/core-composer-scaffold#altering-scaffold-files
+# for how to add to these files.
+.editorconfig
+.gitattributes
+.idea
+
+# Docker compose
+.env
+docker-compose.override.yml
+
+# Drupal install.
+web/core/
+
+# Root core files.
+web/.*
+web/*.txt
+web/*.php
+web/web.config
+web/example.gitignore
+
+# Contrib modules, themes, etc.
+web/libraries
+web/modules/README.txt
+web/modules/contrib/
+web/modules/custom/kk_login
+web/profiles/README.txt
+web/profiles/contrib/
+web/themes/README.txt
+web/themes/contrib/
+drush/Commands/contrib/
+
+# Sites files.
+web/sites/README.txt
+web/sites/default/default*
+
+# Default site files
+web/sites/default/files
+web/sites/example*
+web/sites/development.services.yml
+web/sites/default/settings.local.php
+# drupal-check
+web/sites/simpletest
+
+# Node modules used for building theme assets.
+node_modules
+
+# Theme generated asserts used for building.
+web/themes/custom/kk_basis/assets/
+web/themes/custom/kk_intra/assets/
+web/themes/custom/kk_admin/assets/
+
+# Unit test
+.phpunit.result.cache
+# Behat test output
+features/failed_scenarios/*.png
+
+# Ignore everything but the main fixture
+fixtures/*
+!fixtures/base.tar.gz
+!fixtures/test.tar.gz
+!fixtures/fixture.tar.gz
+
+# Ignore the backup dir
+/backup
+
+# Ignore drush caches
+.drush
+
+# Editor configs and directories
+.history
+
+# OS Specific files
+.DS_Store
