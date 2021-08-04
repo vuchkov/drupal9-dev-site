@@ -253,7 +253,8 @@ $databases = [];
  * directory in the public files path. The setting below allows you to set
  * its location.
  */
-$settings['config_sync_directory'] = '/config/default';
+$settings['bootstrap_config_storage'] = array('Drupal\Core\Config\BootstrapConfigStorageFactory::class', 'getFileStorage');
+$settings['config_sync_directory'] = '../config/default';
 
 /**
  * Settings:
