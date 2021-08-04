@@ -1,0 +1,16 @@
+name: Microsite
+type: theme
+description: 'Microsite theme'
+package: Core
+version: VERSION
+base theme: false
+core_version_requirement: ^8.8 || ^9
+regions:
+  header: 'Page header region'
+  content: 'Main content region'
+  highlighted: 'Highlighted region for messages'
+  footer: 'Footer region'
+  hidden: 'Hidden region for referenced blocks'
+libraries:
+  - microsite/global-styling
+  - microsite/global-scripts

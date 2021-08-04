@@ -1,0 +1,16 @@
+global-styling:
+  css:
+    base:
+      css/normalize.css: {}
+      css/webflow.css: {}
+      css/overrides.css: {}
+      css/microsite.webflow.css: {}
+global-scripts:
+  js:
+    js/webflow.js: {}
+  dependencies:
+    - core/drupalSettings
+    - core/jquery
+    - core/jquery.once
+    - core/drupal.ajax
+    - core/drupal

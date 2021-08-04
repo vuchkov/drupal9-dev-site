@@ -1,0 +1,7 @@
+
+.toolbar .toolbar-bar {
+  z-index: 2000;
+}
+.toolbar-menu li {
+  margin: 0
+}
